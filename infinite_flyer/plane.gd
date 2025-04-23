@@ -37,7 +37,7 @@ func set_score(value):
 	score = value
 	score_changed.emit(score)
 
-func get_input(delta):
+func get_input(_delta):
 	pitch_input = Input.get_axis("pitch_down", "pitch_up")
 	roll_input = Input.get_axis("roll_left", "roll_right")
 	if position.y >= max_altitude and pitch_input > 0:

@@ -10,7 +10,7 @@ func _ready():
 	randomize()
 	
 
-func _process(delta):
+func _process(_delta):
 	if $Plane.position.z  < max_position:
 		num_chunks += 1
 		var new_chunk = chunk.instantiate()
