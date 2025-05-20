@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://q4w7sod15ydk"]
+[gd_scene load_steps=3 format=3 uid="uid://q4w7sod15ydk"]
 
 [ext_resource type="MeshLibrary" uid="uid://14e8nactr8le" path="res://golf_tiles.tres" id="1_af3ml"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kmqgj"]
+rough = true
+bounce = 0.5
 
 [node name="Node3D" type="Node3D"]
 
@@ -10,3 +14,4 @@ fov = 65.0
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("1_af3ml")
+physics_material = SubResource("PhysicsMaterial_kmqgj")
