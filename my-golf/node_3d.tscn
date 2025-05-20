@@ -1,13 +1,12 @@
 [gd_scene load_steps=2 format=3 uid="uid://q4w7sod15ydk"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_axujy"]
+[ext_resource type="PackedScene" uid="uid://ckjaw2li1uqy8" path="res://assets/golf_tiles.glb" id="1_cuagt"]
 
 [node name="Node3D" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-
-[node name="Cube" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_axujy")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.945558, 0.121137, -0.302068, -5.77397e-08, 0.928149, 0.37221, 0.325453, 0.351947, -0.877618, -1.40299, 1.40281, -3.50696)
-fov = 60.0
+transform = Transform3D(-0.981627, 0.0776091, -0.174313, 0, 0.913546, 0.406736, 0.190809, 0.399264, -0.89676, -0.828, 1.403, -3.507)
+fov = 65.0
+
+[node name="golf_tiles" parent="." instance=ExtResource("1_cuagt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14.7987)
