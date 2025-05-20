@@ -7,3 +7,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Cube" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_axujy")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.945558, 0.121137, -0.302068, -5.77397e-08, 0.928149, 0.37221, 0.325453, 0.351947, -0.877618, -1.40299, 1.40281, -3.50696)
+fov = 60.0
