@@ -1,6 +1,6 @@
-__*
-__*/
-
+# RopeSim DLL
+.addons/ropesim/bin/~libropesim.windows.template_debug.x86_64.dll
+*/.addons/ropesim/bin/~libropesim.windows.template_debug.x86_64.dll
 
 # Godot 4+ specific ignores
 .godot/
