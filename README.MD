@@ -2,7 +2,8 @@
 
 ## 21-05-10
 - Start empty my-golf
-- use book
+- Use book
+- Continue my-golf from page 221 Environment and lighting
 
 ## 25-04-10
 - Tested Flyer
