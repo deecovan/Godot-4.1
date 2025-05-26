@@ -4,6 +4,7 @@
 - Copy, Reimport and Resave my-golf for Godot_v4.4.1 (other repo)
 - Continue my-golf from page 221 Environment and lighting
 - Add WorldEnvironment node and a DirectionalLight3D node
+- Play with Directional Shadow and Light5D Shadow
 
 ## 05.10
 - use book

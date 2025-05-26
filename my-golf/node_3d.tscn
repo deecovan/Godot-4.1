@@ -26,6 +26,11 @@ environment = SubResource("Environment_q83qv")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
+shadow_blur = 2.0
+directional_shadow_mode = 1
+directional_shadow_fade_start = 0.2
+directional_shadow_max_distance = 40.0
+directional_shadow_pancake_size = 10.0
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-0.96363, 0.178818, -0.198597, 0, 0.743145, 0.66913, 0.267238, 0.644795, -0.716116, -0.688, 1.908, -3.557)
