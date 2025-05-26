@@ -5,6 +5,9 @@
 - Continue my-golf from page 221 Environment and lighting
 - Add WorldEnvironment node and a DirectionalLight3D node
 - Play with Directional Shadow and Light5D Shadow
+- Add Hole Area3D with Collision and Tee Marker3D
+- Continue Making the ball
+
 
 ## 05.10
 - use book
