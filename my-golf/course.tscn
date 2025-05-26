@@ -1,6 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c8lmxpwqm1u3y"]
+[gd_scene load_steps=10 format=3 uid="uid://c8lmxpwqm1u3y"]
 
+[ext_resource type="Script" path="res://course.gd" id="1_n1gas"]
 [ext_resource type="MeshLibrary" uid="uid://14e8nactr8le" path="res://golf_tiles.tres" id="1_tc2pr"]
+[ext_resource type="PackedScene" uid="uid://scg648syvvgp" path="res://ball.tscn" id="2_m8a2a"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gi5uj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -22,7 +24,11 @@ rough = true
 height = 0.25
 radius = 0.08
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_x21lc"]
+bounce = 0.25
+
 [node name="Course" type="Node3D"]
+script = ExtResource("1_n1gas")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_q83qv")
@@ -37,7 +43,8 @@ directional_shadow_max_distance = 40.0
 directional_shadow_pancake_size = 10.0
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.96363, 0.178818, -0.198597, 0, 0.743145, 0.66913, 0.267238, 0.644795, -0.716116, -0.688, 1.908, -3.557)
+transform = Transform3D(0.895712, -0.285806, 0.34061, 0, 0.766044, 0.642788, -0.444635, -0.575752, 0.686155, 1.231, 2.013, 3.499)
+visible = false
 fov = 65.0
 
 [node name="GridMap" type="GridMap" parent="."]
@@ -56,3 +63,8 @@ shape = SubResource("CylinderShape3D_jnrru")
 
 [node name="Tee" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499336, 0.701314, 2.73793)
+
+[node name="Ball" parent="." instance=ExtResource("2_m8a2a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.497774, 1.37823, 2.72512)
+physics_material_override = SubResource("PhysicsMaterial_x21lc")
+continuous_cd = true

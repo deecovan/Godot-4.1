@@ -9,6 +9,10 @@
 - Continue Making the ball
 - Rename scenes 
 - Add Ball RigidBody3D
+- Place Ball into Course scene
+- Change Camera position
+- Bind "restart" key F5 to get_tree().reload_current_scene()
+- Test scene with Course, Ball and Camera 
 
 
 ## 05.10
