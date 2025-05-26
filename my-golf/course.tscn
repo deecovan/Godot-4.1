@@ -25,7 +25,7 @@ height = 0.25
 radius = 0.08
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_x21lc"]
-bounce = 0.25
+bounce = 0.33
 
 [node name="Course" type="Node3D"]
 script = ExtResource("1_n1gas")
@@ -65,6 +65,9 @@ shape = SubResource("CylinderShape3D_jnrru")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499336, 0.701314, 2.73793)
 
 [node name="Ball" parent="." instance=ExtResource("2_m8a2a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.497774, 1.37823, 2.72512)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.498038, 2.02279, 2.86431)
 physics_material_override = SubResource("PhysicsMaterial_x21lc")
 continuous_cd = true
+linear_velocity = Vector3(0, 0, -0.1)
+linear_damp = 0.5
+angular_damp = 1.0

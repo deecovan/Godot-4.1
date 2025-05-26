@@ -13,7 +13,8 @@
 - Change Camera position
 - Bind "restart" key F5 to get_tree().reload_current_scene()
 - Test scene with Course, Ball and Camera 
-
+- Play with Forces and Dump
+- Continue 
 
 ## 05.10
 - use book
