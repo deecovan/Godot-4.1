@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://q4w7sod15ydk"]
+[gd_scene load_steps=7 format=3 uid="uid://c8lmxpwqm1u3y"]
 
-[ext_resource type="MeshLibrary" uid="uid://14e8nactr8le" path="res://golf_tiles.tres" id="1_af3ml"]
+[ext_resource type="MeshLibrary" uid="uid://14e8nactr8le" path="res://golf_tiles.tres" id="1_tc2pr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gi5uj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -22,7 +22,7 @@ rough = true
 height = 0.25
 radius = 0.08
 
-[node name="Node3D" type="Node3D"]
+[node name="Course" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_q83qv")
@@ -41,7 +41,7 @@ transform = Transform3D(-0.96363, 0.178818, -0.198597, 0, 0.743145, 0.66913, 0.2
 fov = 65.0
 
 [node name="GridMap" type="GridMap" parent="."]
-mesh_library = ExtResource("1_af3ml")
+mesh_library = ExtResource("1_tc2pr")
 physics_material = SubResource("PhysicsMaterial_kmqgj")
 cell_size = Vector3(1, 1, 1)
 data = {
