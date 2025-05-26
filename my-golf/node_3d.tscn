@@ -53,3 +53,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.499323, 0.375393, 2.49712)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hole"]
 shape = SubResource("CylinderShape3D_jnrru")
+
+[node name="Tee" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499336, 0.701314, 2.73793)
