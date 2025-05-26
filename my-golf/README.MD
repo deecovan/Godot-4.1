@@ -7,6 +7,8 @@
 - Play with Directional Shadow and Light5D Shadow
 - Add Hole Area3D with Collision and Tee Marker3D
 - Continue Making the ball
+- Rename scenes 
+- Add Ball RigidBody3D
 
 
 ## 05.10
