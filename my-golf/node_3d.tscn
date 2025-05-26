@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://q4w7sod15ydk"]
+[gd_scene load_steps=7 format=3 uid="uid://q4w7sod15ydk"]
 
 [ext_resource type="MeshLibrary" uid="uid://14e8nactr8le" path="res://golf_tiles.tres" id="1_af3ml"]
 
@@ -17,6 +17,10 @@ glow_enabled = true
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kmqgj"]
 rough = true
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jnrru"]
+height = 0.25
+radius = 0.08
 
 [node name="Node3D" type="Node3D"]
 
@@ -43,3 +47,9 @@ cell_size = Vector3(1, 1, 1)
 data = {
 "cells": PackedInt32Array(65535, 65535, 655384, 65535, 0, 655391, 0, 0, 655386, 0, 65535, 655384, 0, 1, 655397, 65535, 1, 655387, 65535, 2, 1, 0, 2, 22, 0, 65534, 2, 65535, 65534, 1441794, 1, 65534, 655360, 65534, 65534, 1048576, 1, 65533, 1441792, 65534, 65533, 0, 0, 65533, 1441816, 65535, 65533, 1441816)
 }
+
+[node name="Hole" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.499323, 0.375393, 2.49712)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hole"]
+shape = SubResource("CylinderShape3D_jnrru")
