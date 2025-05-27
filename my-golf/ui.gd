@@ -25,6 +25,8 @@ func update_power_bar(value):
 func show_message(text):
 	$Message.text = text
 	$Message.show()
+	await get_tree().create_timer(2).timeout
+	$Message.hide()
 
 
 # Called when the node enters the scene tree for the first time.
