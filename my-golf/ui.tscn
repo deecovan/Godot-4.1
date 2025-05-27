@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://b7lnwfhyqnnue"]
+[gd_scene load_steps=6 format=3 uid="uid://b7lnwfhyqnnue"]
 
+[ext_resource type="Script" path="res://ui.gd" id="1_bqhla"]
 [ext_resource type="Texture2D" uid="uid://dc1ejq2s6hc01" path="res://assets/bar_green.png" id="1_ungwk"]
 
 [sub_resource type="SystemFont" id="SystemFont_noj2h"]
@@ -9,6 +10,7 @@
 [sub_resource type="SystemFont" id="SystemFont_bouit"]
 
 [node name="UI" type="CanvasLayer"]
+script = ExtResource("1_bqhla")
 
 [node name="Message" type="Label" parent="."]
 visible = false
