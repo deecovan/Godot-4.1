@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cukklvkoh4jw6"]
+
+[ext_resource type="Material" uid="uid://c1musvmoio4hq" path="res://yellow_alpha_6.tres" id="1_nlrmx"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xkgew"]
+material = ExtResource("1_nlrmx")
+top_radius = 0.0
+height = 1.0
+radial_segments = 16
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_w164w"]
+material = ExtResource("1_nlrmx")
+top_radius = 0.2
+bottom_radius = 0.2
+radial_segments = 16
+rings = 1
+
+[node name="Arrow" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="Head" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+mesh = SubResource("CylinderMesh_xkgew")
+
+[node name="Body" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 4.37114e-08)
+mesh = SubResource("CylinderMesh_w164w")
