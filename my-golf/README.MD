@@ -1,5 +1,8 @@
 # my-golf GitHub repo 
 
+## 05.27
+- Continue Adding UI
+
 ## 05.26
 - Copy, Reimport and Resave my-golf for Godot_v4.4.1 (other repo)
 - Continue my-golf from page 221 Environment and lighting
@@ -14,7 +17,6 @@
 - Bind "restart" key F5 to get_tree().reload_current_scene()
 - Test scene with Course, Ball and Camera 
 - Play with Forces and Dump
-- Continue Adding UI
 
 ## 05.10
 - use book
